@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Biblioteca</title>
+	<link rel="stylesheet" media="only screen and (min-width: 600px) and (max-width: 1900px)" href="estiloComJS1.css" />
+	<link rel="stylesheet" media="only screen and (min-width: 300px) and (max-width: 500px) " href="estiloComJS1.css" />
+	
+	<script>
+		function displayTime() {
+			var elt = document.getElementById("clock");
+			var now = new Date();
+			elt.innerHTML = now.toLocaleTimeString();
+			setTimeout(displayTime, 1000);
+		}
+		window.onload = displayTime;
+		</script>
+
+		<!-- Painel de Notícias-->
+<center>
+		<div id="pn">
+		<style>
+			<!--
+			.scrollerstyle{
+			font-family:webdings;background:#FFFFFF;border:1px solid #000000;cursor:hand;
+			}
+			-->
+			</style>
+			
+			<script language="javascript">
+			
+			//News Bar script- By Premshree Pillai (premshree@hotmail.com)
+			
+			var msgs = new Array(
+			"G1 Mundo",
+			"Google",
+			"Impulso Network",
+			"Vagas.Com",
+			"Linkedin",
+			"Infojobs RJ",
+			"99Freelas",
+			"Workana",
+			"WordPress",
+			"Código Fonte",
+			"Facebook",
+			"Outlook",
+			"Youtube",
+			"Udemy",); 
+			
+			var msg_url = new Array(
+			"https://g1.globo.com/mundo/",
+			"http://www.google.com",
+			"https://impulso.network",
+			"http://www.vagas.com.br",
+			"http://www.linkedin.com.br",
+			"http://www.infojobs.com.br/rj",
+			"http://www.99Freelas.com.br",
+			"http://www.workana.com.br",
+			"http://www.wordpress.com.br",
+			"https://www.codigofonte.net",
+			"http://www.facebook.com.br",
+			"http://www.outlook.com.br",
+			"http://www.youtube.com",
+			"http://www.udemy.com" );
+		
+			var barwidth=350 
+			var setdelay=2000 
+			var mouseover_color='#E1FFE1'
+			var mouseout_color='#FFFFFF'
+			</script>
+			
+			<script language="JavaScript">
+			
+			var count=0;
+			var ns6=document.getElementById&&!document.all
+			var ie4=document.all&&navigator.userAgent.indexOf("Opera")==-1
+			
+			if (ie4||ns6){
+			document.write('<form name="news_bar"><input type="button" value="3" onclick="moveit(0)" class="scrollerstyle" style="width:22; height:22; border-right-width:0px;" name="prev" title="Previous News"><input type="button" name="news_bar_but" onclick="goURL();" style="color:#000000;background:#FFFFFF; width:'+barwidth+'; height:22; border-width:1; border-color:#000000; cursor:hand" onmouseover="this.style.background=mouseover_color" onmouseout="this.style.background=mouseout_color"><input type="button" value="4" onclick="moveit(1)" class="scrollerstyle" style="width:22; height:22; border-left-width:0px;" name="next" title="Next News"></form>');
+			}
+			else{
+			document.write('<form name="news_bar"><input type="button" value="Previous" onclick="moveit(0)">')
+			if (navigator.userAgent.indexOf("Opera")!=-1)
+			document.write('<input type="button" name="news_bar_but" onclick="goURL();" style="width:'+barwidth+'" border="0">')
+			else
+			document.write('<input type="button" name="news_bar_but" onclick="goURL();" width="'+barwidth+'" border="0">')
+			document.write('<input type="button" value="Next" onclick="moveit(1)"></form>')
+			}
+			
+			function init_news_bar(){
+			  document.news_bar.news_bar_but.value=msgs[count];
+			}
+			//moveit function by Dynamicdrive.com
+			function moveit(how){
+			if (how==1){ //cycle foward
+			if (count<msgs.length-1)
+			count++
+			else
+			count=0
+			}
+			else{ //cycle backward
+			if (count==0)
+			count=msgs.length-1
+			else
+			count--
+			}
+			document.news_bar.news_bar_but.value=msgs[count];
+			}
+			
+			setInterval("moveit(1)",setdelay)
+			
+			function goURL(){
+			 location.href=msg_url[count];
+			}
+			
+			init_news_bar();
+			
+			</script>
+			</div>
+			</center>
+
+</head>
+
+<body>
+
+<div id="conteiner">
+	<header role="banner">
+	<nav role="navigation">
+	<div id="listputs">
+        <table>
+	        <tr>
+	        <td> <li id="lista1"><a href="">Esoterismo e Religião</a></li>
+		    <td><li id="lista2"><a href="">Tecnologia da Informação</a></li>
+			<td><li id="lista3" ><a href="">Música</a></li>
+			</td></tr></table>
+	<!-- inicio da Caixa de Busca -->
+	<div id="divBusca">
+			<img src="lupa.png" alt="Buscar... " width="25" height="25"/>
+			<input type="text" id="txtBusca" placeholder="Buscar..."/>
+			<button id="btnBusca">Buscar</button>
+	</div>	
+	<!-- Fim da Caixa de Busca -->
+            </div>     
+		</nav>
+	</header>
+   
+	<div id="content" role="main">
+	  <article class="esot" role="main"> 
+			<span id="clock"></span>
+		<h1 id="esoterismo">Esoterismo e Religião</h1> 
+	     <p>Esoterismo e Religião estão presentes na vida humana há muito tempo,
+		mas é importante deixar claro que não são a mesma coisa. Explico. 
+		As pessoas religiosas são, de acordo com a orientação de sua fé, 
+		esotéricas. Por outro lado, algumas pessoas podem ser esotéricas 
+		sem estarem necessariamente ligadas a uma religião. Em outros termos:
+		as religiões estão atreladas ao esoterismo, contudo é possível abraçar
+		um percurso esotérico distante das propostas e ordenamentos religiosos.
+	     </p>
+		
+		<section class="project">
+			<h2 id="ti">Tecnologia da Informação</h2>
+			<p>	 
+			<div class="areaImagem">		 		 
+			<img src="biblioteca.png" align="left" "width="75" height="100" alt="Sagrada Família Towers" />
+			</div>
+			
+			<div class="areaTexto">
+					Pode-se definir Tecnologia da Informação (TI) como o conjunto 
+					de todas as atividades e soluções providas por recursos de
+					computação que visam a produção, o armazenamento, a transmissão,
+					o acesso, a segurança e o uso das informações. Na verdade, as
+					aplicações para TI são tantas — e estão ligadas a tantas áreas — 
+					que há diversas definições para a expressão e nenhuma delas consegue
+					determiná-la por completo. É a área da informática que trata a informação,
+					a organização e a classificação de forma a permitir a tomada de decisão em
+					prol de algum objetivo.
+			</p>		
+			</div>
+		</section> 
+		 
+		<section class="project"> 
+		  <h2 id="musica">Música</h2> 
+			<p>
+			  <div clas="areaImagem">	
+			    <img src="biblioteca.png" align="left" width="100" height="75" alt="Park Guell Dragon" /> 
+              </div>
+			
+			<div class="areaTexto">
+			A música (do grego μουσική τέχνη - musiké téchne, a arte das 
+			musas) é uma forma de arte que se constitui na combinação de
+			vários sons e ritmos, seguindo uma pré-organização ao longo do tempo.
+			
+			É considerada por diversos autores como uma prática cultural e humana.
+			Não se conhece nenhuma civilização ou agrupamento que não possua
+			manifestações musicais próprias. Embora nem sempre seja feita com esse
+			objetivo, a música pode ser considerada como uma forma de arte, considerada
+			por muitos como sua principal função.
+	        </div>
+		</section>
+	</article>
+
+    <div id="sidebar">
+	  <aside role="complementary">
+		<h1>Uma Biblioteca Magnífica</h1>
+		  <p>Barcelona is home to many architectural wonders in addition to Gaudí's work. Some of them include:</p>
+		    <ul>
+			<li lang="en"><a href="">Eliphas Lévi</a></li>
+			<li><a href="">Outro <span lang="es">(La Seu)</span></a></li>
+			<li lang="es"><a href="">Otro Mui Bueno</a></li>
+			<li lang="pt-br"><a href="">Outro2</a></li>		
+			<li lang="pt-br"><a href="">Outro3</a></li>
+		    </ul>
+		  <p>Credito: <a href="http://www.barcelona.de/en/barcelona-architecture-buildings.html" rel="external"><cite>Biblioteca.com</cite></a>.</p>
+	  </aside>
+    </div>	
+	</div>
+
+	<footer>
+		<p><small>&copy; Copyright 2019</small></p>
+	   </footer>
+
+	   <!-- inicio das caixas de propaganda -->
+	   <div id="espaço">
+	     <div id="esp1">
+			<h1> Arquivos FullStack</h1>
+			<a href="C:\Users\RejaneOliveira\Downloads\Livros de Programação" target="arquivos">Livros</a>
+	     </div>	 
+
+	     <div id="esp2">
+			 <h1>Espaço2<h1>
+			 
+		 </div>
+
+		<div id="esp3">
+			<a href="https://www.google.com.br" target="google"> Google </a>
+			<a href="" target=""> </a>
+			<a href="" target=""> </a>
+			<a href="" target=""> </a>
+		</div>
+
+		<div id="esp4">
+			<h1>Espaço 4</h1>
+		</div>
+
+		<div id="esp5">
+			<h1>Vídeos FullStack</h1>
+			<a href="C:\Users\RejaneOliveira\dwhelper" target="videos">Vídeos</a>
+		</div>
+
+		<div id="esp6">
+			<h1>Espaço 6</h1>
+		</div>
+
+		<div id="esp7">
+			<h1>Espaço 7</h1>
+		</div>
+
+		<div id="esp8">
+			<h1>Espaço 8</h1>
+		</div>
+		</div>
+		
+       <!-- fim das caixas de propaganda -->
+
+	<!-- Texto Móvel -->
+	<div id="marquee">
+	<marquee width="680" id="t0"> Exemplo de  "Texto de Notícias", ao estilo CNN !!! As informações aparecem no " Roda Pé " </marquee>
+	<marquee width="200" id="t1"> Exemplo de Texto Móvel </marquee>
+	
+	<marquee width="200" scrollamount="200" scrolldelay="800" id="t3"> Exemplo de Texto Pisca-Pisca! </marquee>
+	<marquee width="200" scrollamount="200" scrolldelay="600" id="t4"> <h2> Bom dia </h2> </marquee>
+	<marquee width="200" scrollamount="200" scrolldelay="700" id="t5"> <h2> Boa Tarde </h2> </marquee>
+	<marquee width="200" scrollamount="200" scrolldelay="800" id="t6"> <h2> Boa Noite </h2> </marquee>
+	<marquee width="200" scrollamount="200" scrolldelay="900" id="cor1"> <h1>OOOOOOO</h1> </marquee>
+	</div>
+	
+
+<!-- Calculadora -->	
+<div id="calc">
+		<form name="Calc">
+		<table border=4 width="155" bgcolor="blue">
+			<tr>
+				<td align="center">
+					<input type ="text"  name="Input" size="16">
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<input type="button" name="one"
+					value="  1  " onClick="Calc.Input.value += '1'">
+					<input type="button" name="two"
+					value="  2  " onClick="Calc.Input.value += '2'">
+					<input type="button" name="three"
+					value="  3  " onClick="Calc.Input.value += '3'">
+					<input type="button" name="plus"
+					value="  +  " onClick="Calc.Input.value += ' + '">
+					<br>
+					<input type="button" name="four"
+					 value="  4  " onClick="Calc.Input.value += '4'">
+					 <input type="button" name="five"
+					 value="  5  " onClick="Calc.Input.value += '5'">
+					 <input type="button" name="six"
+					 value="  6  " onClick="Calc.Input.value += '6'">
+					 <input type="button" name="minus"
+					 value="  -   " onClick="Calc.Input.value += ' - '">
+					<br>
+					 <input type="button" name="seven"
+					 value="  7  " onClick="Calc.Input.value += '7'">
+					 <input type="button" name="eight"
+					 value="  8  " onClick="Calc.Input.value += '8'">
+					 <input type="button" name="nine"
+					 value="  9  " onClick="Calc.Input.value += '9'">
+					 <input type="button" name="times"
+					 value="  x  " onClick="Calc.Input.value += ' * '">
+					<br>
+					<input type="button" name="clear"
+					 value="  c  " onClick="Calc.Input.value = ''">
+					 <input type="button" name="zero"
+					 value="  0  " onClick="Calc.Input.value += '0'">
+					 <input type="button" name="DoIt"
+					 value="  =  " onClick="Calc.Input.value = eval(Calc.Input.value)">
+					 <input type="button" name="div"
+					 value="  /   " onClick="Calc.Input.value += ' / '">
+				</td>
+			</tr>
+		</table>
+		</form>
+</div>
+
+</body> 
+</html>

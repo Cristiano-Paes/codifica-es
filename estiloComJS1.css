@@ -1,0 +1,432 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 600px) and (max-width: 1900px) {
+
+#calc { 
+       position: absolute;
+       right: 300px;
+       bottom: -40px;
+    }
+
+#pn {
+      position: absolute;
+      right: 320px;
+      top: 120px;
+    
+} 
+
+#clock {
+        font: bold 24pt sans;
+        background: #ddf;
+        padding: 10px;
+        border: solid black 2px;
+        border-radius: 10px;
+    }
+
+body {
+    
+        background-color: blueviolet;
+        padding: 250px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-size: auto; 
+    }
+
+header {
+    background-color: #EAE4EF;
+    padding: 1px;
+}
+
+
+#listputs  {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+
+#lista1 {
+    width: 180px;
+}
+
+#lista2 {
+    width: 210px;
+}
+
+#lista3 {
+    width: 200px;
+}
+
+#areaImagem img {
+    float: left;
+    margin-top: 10px;
+    width: 400px;
+}
+
+.areaTexto p{
+    float: left;
+    max-width: 500px;
+    margin-left: 10px;
+}
+
+
+#divBusca{
+    background-color: #E0EEEE;
+    border: solid 2px #5F9EA0;
+    border-radius: 10px;
+    width: 244px;
+    height: 30px;
+    right: 280px;
+    top: 40px;
+    position: absolute; 
+  }
+   
+  #txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px; 
+    font-size: 18px;
+    border: none;
+    height: 30px;
+    width: 150px;
+  }
+   
+  #btnBusca {
+    border: none;
+    float: left;
+    height: 30px;
+    border-radius: 0 7px 7px 0;
+    width: 63px;
+    font-weight: bold;
+    background: #5F9EA0;
+  }
+   
+  #divBusca img {
+    float: left;
+  }
+
+#conteiner {
+    box-shadow: 10px 10px 10px 10px;
+    background-color: azure;
+}
+
+article {
+    padding: 10px;
+    width: 550px;
+}
+
+#sidebar {
+    background-color: #EBF5FC;
+    box-shadow: 2px 2px 2px 2px;
+    position: absolute;
+    right: 265px;
+    top: 30%;
+    width: 250px;
+    margin-top: -2.5em;
+}
+  
+/*início das caixas de propaganda*/
+
+#esp1 {
+    background-color: #EBF5FC;
+    box-shadow: 2px 2px 2px 2px;
+    position: absolute;
+    left: 5px;
+    top: 11%;
+    width: 242px;
+    height: 200px;
+    margin-top: -2.5em;
+}
+
+#esp1 h1 {
+    font-size: 23px;
+    color: green;
+    background: yellow;
+}
+
+#esp2 {
+    background-color: #EBF5FC;
+    box-shadow: 2px 2px 2px 2px;
+    position: absolute;
+    left: 5px;
+    top: 43%;
+    width: 242px;
+    height: 200px;
+    margin-top: -2.5em;
+}
+
+#esp2 h1 {
+    font-size: 23px;
+    color: green;
+    background: yellow;
+}
+
+#esp3 {
+    background-color: #EBF5FC;
+    box-shadow: 2px 2px 2px 2px;
+    position: absolute;
+    left: 5px;
+    top: 75%;
+    width: 242px;
+    height: 200px;
+    margin-top: -2.5em;
+}
+
+#esp3 h1 {
+    font-size: 23px;
+    color: green;
+    background: yellow;
+}
+
+#esp4 {
+    background-color: #EBF5FC;
+    box-shadow: 2px 2px 2px 2px;
+    position: absolute;
+    left: 5px;
+    top: 107%;
+    width: 242px;
+    height: 145px;
+    margin-top: -2.5em;
+}
+
+#esp4 h1 {
+    font-size: 23px;
+    color: green;
+    background: yellow;
+}
+
+#esp5 {
+    background-color: #EBF5FC;
+    box-shadow: 2px 2px 2px 2px;
+    position: absolute;
+    right: 5px;
+    top: 11%;
+    width: 242px;
+    height: 200px;
+    margin-top: -2.5em;
+}
+
+#esp5 h1 {
+    font-size: 23px;
+    color: green;
+    background: yellow;
+}
+
+#esp6 {
+    background-color: #EBF5FC;
+    box-shadow: 2px 2px 2px 2px;
+    position: absolute;
+    right: 5px;
+    top: 43%;
+    width: 242px;
+    height: 200px;
+    margin-top: -2.5em;
+}
+
+#esp6 h1 {
+    font-size: 23px;
+    color: green;
+    background: yellow;
+}
+
+#esp7 {
+    background-color: #EBF5FC;
+    box-shadow: 2px 2px 2px 2px;
+    position: absolute;
+    right: 5px;
+    top: 75%;
+    width: 242px;
+    height: 200px;
+    margin-top: -2.5em;
+}
+
+#esp7 h1 {
+    font-size: 23px;
+    color: green;
+    background: yellow;
+}
+
+#esp8 {
+    background-color: #EBF5FC;
+    box-shadow: 2px 2px 2px 2px;
+    position: absolute;
+    right: 5px;
+    top: 107%;
+    width: 242px;
+    height: 145px;
+    margin-top: -2.5em;
+}
+
+#esp8 h1 {
+    font-size: 23px;
+    color: green;
+    background: yellow;
+}
+/*fim das caixas de propaganda*/
+
+footer {
+    background-color: #EAE4EF;
+    padding: 1px;
+}
+
+/* Texto Móvel */
+#t1 {
+      top: 80px;
+      position: absolute;
+      right: 300px;
+  }
+
+  #t2 {
+      top: 80px;
+      position: absolute;
+      left: 260px;
+  }
+
+  #t0 {
+      top: 740px;
+      position: absolute;
+      right: 300px;
+  }
+
+  #t3 {
+      top: 760px;
+      position: absolute;
+      left: 600px;
+  }
+
+  #t4 {
+      top: 280px;
+      position: absolute;
+      left: 30px;
+  }
+
+  #t5 {
+      top: 330px;
+      position: absolute;
+      left: 60px;
+  }
+
+  #t6 {
+      top: 380px;
+      position: absolute;
+      left: 90px;
+  }
+
+  #cor1 {
+      top: 300px;
+      position: absolute;
+      right: 10px;
+  }
+}
+
+
+/* Para Telefone */
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+
+    #clock {
+        font: bold 20pt sans;
+        background: #ddf;
+        padding: 03px;
+        border: solid black 2px;
+        border-radius: 10px;
+        margin-left: 70px;
+    }
+
+    body {
+        width: 305px;
+        background-color: blueviolet;
+        padding: 1px;
+    }
+
+    #conteiner {
+        box-shadow: 1px 1px 1px 1px;
+        background-color: azure;
+        height: 1470px;
+        
+   }
+    
+    header {
+        background-color: #EAE4EF;
+        padding: 10px;
+        height: 100px;
+        width: 280px;
+    }
+    
+    #listputs  {
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 1px;
+    }
+
+    .areaTexto p {
+        max-width: 150px;
+        margin-left: 5px;
+    }
+    
+    #divBusca {
+        background-color: #E0EEEE;
+        border: solid 5px #5F9EA0;
+        border-radius: 10px;
+        width: 244px;
+        height: 30px;
+        right: 150px;
+        margin-left: 20px;
+        margin-top: 10px;
+        }
+       
+      #txtBusca {
+        float: left;
+        background-color: transparent;
+        padding-left: 5px; 
+        font-size: 18px;
+        border: none;
+        height: 30px;
+        width: 150px;
+      }
+       
+      #btnBusca {
+        border: none;
+        float: left;
+        height: 30px;
+        border-radius: 0 7px 7px 0;
+        width: 63px;
+        font-weight: bold;
+        background: #5F9EA0;
+      }
+       
+      #divBusca img {
+        float: left;
+      }
+    
+    article {
+        padding: 10px;
+        width: 290px;
+    }
+    
+    #sidebar {
+        background-color: #EBF5FC;
+        box-shadow: 2px 2px 2px 2px;
+        top: 15%;
+        width: 290px;
+        margin-top: -1.0em;
+        margin-left: 5px;
+    }
+      
+    
+
+#espaço {
+    visibility: hidden;
+}
+
+#calc {
+    visibility: hidden;
+}
+    
+#marquee {
+    visibility: hidden;
+}
+
+#footer {
+    height: 1400px;
+    position: absolute;
+}
+
+  }
